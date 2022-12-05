@@ -84,7 +84,6 @@ section h3 {
 #contact-me li {
     display: inline;
     margin-right: 30px;
-    border-bottom: var(--branded-cyan) solid 2px;
 }
 
 #contact-me a {
@@ -93,4 +92,9 @@ section h3 {
 
 #contact-me ul{
     padding: 0;
+}
+
+#contact-me img {
+    width: 30px;
+    height: 30px;
 }
