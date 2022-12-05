@@ -10,14 +10,15 @@
     <header>
         <h1>Dustin Honeck's Portfolio</h1>
         <nav>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
+            <ul class="flex-parent">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>  
         </nav>
     </header>
     <img src="https://via.placeholder.com/1920x200.png?text=Image+Placeholder" style="width: 100%; height: 200px;" alt="">
-    <p>Cool subtitle here!</p>
     <section id="about-me">
         <h3>About Me</h3>
         <div class="section-content">
@@ -28,7 +29,7 @@
     </section>
     <section id="work">
         <h3>Work</h3>
-        <div class="section-content">
+        <div class="section-content flex-parent">
             <a href="#"><img src="https://via.placeholder.com/400x300.png?text=Work+Placeholder+1"></a>
             <a href="#"><img src="https://via.placeholder.com/400x300.png?text=Work+Placeholder+2"></a>
             <a href="#"><img src="https://via.placeholder.com/400x300.png?text=Work+Placeholder+3"></a>
@@ -40,7 +41,7 @@
     <section id="contact-me">
         <h3>Contact Me</h3>
         <div class="section-content">
-            <ul>
+            <ul class="flex-parent">
                 <li><a href="tel:4148814276"><img src="./assets/images/phone.png" alt="Phone icon"></a></li>
                 <li><a href="mailto:dustin.honeck@gmail.com"><img src="./assets/images/email.png" alt="Email icon"></a></li>
                 <li><a href="https://github.com/dhoneck/"><img src="./assets/images/github.png" alt="GitHub icon"></a></li>

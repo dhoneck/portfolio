@@ -6,6 +6,14 @@
     --branded-cyan: #92cccd;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 html {
     background-color: var(--branded-white);
     font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +47,7 @@ nav {
     display: inline;
     float: right;
     position: relative;
-    top: 35px;
+    top: 20px;
 }
 
 nav li {
@@ -66,7 +74,6 @@ section h3 {
     display: inline-block;
     font-size: 2.5em;
     width: 20%;
-    height: 100%;
     border-right: 5px solid var(--branded-blue);
     vertical-align: top;
     margin: 0px;
@@ -81,13 +88,12 @@ section h3 {
     vertical-align: top;
 }
 
+#contact-me {
+    clear: both;
+}
 #contact-me li {
     display: inline;
     margin-right: 30px;
-}
-
-#contact-me a {
-    color: var(--branded-blue);
 }
 
 #contact-me ul{
@@ -97,4 +103,18 @@ section h3 {
 #contact-me img {
     width: 30px;
     height: 30px;
+}
+
+/* Flex Items */
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#work .flex-parent {
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    gap: 5px;
+    margin-bottom: 30px;
 }
