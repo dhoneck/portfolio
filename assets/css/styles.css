@@ -1,0 +1,205 @@
+/* General */
+:root {
+    --branded-white: #ededf6;
+    --branded-blue: #445875;
+    --branded-dark-blue: #32343d;
+    --branded-cyan: #92cccd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--branded-white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: var(--branded-dark-blue);
+    height: 65px;
+}
+
+header h1 {
+    background-color: var(--branded-cyan);
+    color: var(--branded-dark-blue);
+    font-size: 2.5em;
+    display: inline;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+    top: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+nav {
+    display: inline;
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+nav li {
+    display: inline;
+    border-bottom: var(--branded-cyan) solid 2px;
+    margin-right: 15px;
+}
+
+nav a {
+    color: var(--branded-cyan);
+    font-size: 1.25em;
+}
+
+/* Body */
+#cover-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top: 1px solid var(--branded-cyan);
+    border-bottom: 3px solid var(--branded-cyan);
+
+}
+
+section {
+    margin-top: 30px;
+}
+
+section p, section ul {
+    margin-top: 0;
+}
+
+section h3 {
+    color: var(--branded-blue);
+    display: inline-block;
+    font-size: 2em;
+    width: 20%;
+    border-right: 5px solid var(--branded-blue);
+    vertical-align: top;
+    margin: 0;
+    padding-right: 30px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.section-content {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+}
+
+#about-me .section-content {
+    text-align: center;
+}
+
+#profile-picture {
+    margin: auto;
+    width: 20%;
+    border-radius: 10px;
+}
+
+#contact-me {
+    clear: both;
+}
+#contact-me li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#contact-me ul{
+    padding: 0;
+}
+
+#contact-me img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Flex Items */
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#work .flex-parent {
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+#contact-me .flex-parent {
+    justify-content: center;
+}
+
+/* Media Queries */
+/* Apply this MQ on screens 1024px or less */
+@media screen and (max-width: 1024px) {
+    header {
+        text-align: center;
+        height: 110px;
+    }
+    header h1 {
+        padding: 5px;
+        display: block;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    
+    nav {
+        float: none;
+    }
+
+    nav .flex-parent {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/* Apply this MQ on screens 768px or less */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    section h3 {
+        display: block;
+        border-right: none;
+        border-bottom: 3px solid var(--branded-blue);
+        margin: 0 auto 10px;
+        width: 80%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #about-me {
+        text-align: center;
+    }
+
+    #profile-picture {
+        width: 50%;
+    }
+
+    #work .flex-parent {
+        display: flex;
+    }
+
+    #contact-me {
+        text-align: center;
+    }
+}
+
+/* Apply this MQ on screens 480px or less */
+@media screen and (max-width: 480px) {
+
+}
