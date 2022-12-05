@@ -58,6 +58,10 @@ nav a {
     font-size: 1.25em;
 }
 
+nav a:hover {
+    opacity: .7;
+}
+
 /* Body */
 #cover-photo {
     width: 100%;
@@ -116,6 +120,10 @@ section h3 {
     padding: 0;
 }
 
+#contact-me li {
+    margin: 0;
+}
+
 #contact-me img {
     width: 30px;
     height: 30px;
@@ -145,13 +153,13 @@ section h3 {
 .caption {
     background-color: var(--branded-blue);
     display: inline-block;
-    width: 45%;
-    height: 30%;
+    min-width: 20%;
+    min-height: 10%;
     position: absolute;
-    bottom: 15%;
+    top: 55%;
     z-index: 1;
     color: var(--branded-white);
-    padding: 5px;
+    padding: 10px 15px;
 }
 
 .caption p {
@@ -172,7 +180,7 @@ section h3 {
 }
 
 #work img:hover {
-    opacity: .75;
+    opacity: .7;
 }
 
 #work .flex-parent a:first-child {
@@ -187,7 +195,7 @@ section h3 {
 }
 
 #contact-me .flex-parent {
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Media Queries */
