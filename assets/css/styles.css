@@ -256,8 +256,3 @@ section h3 {
         text-align: center;
     }
 }
-
-/* Apply this MQ on screens 480px or less */
-@media screen and (max-width: 480px) {
-
-}
